@@ -48,6 +48,7 @@ class StudentApi(APIView):
         id=pk
         stu=Profile.objects.get(pk=id)
         stu.delete()
+        print("successfully deleted")
         return Response({'msg':'delete data'})
 
         
